@@ -9,7 +9,6 @@ public class Ahorcado {
         int aciertos= 0;
         char letra;
         char let;
-        String arriesga="";
         int oportunidad2 = 6;
         String pantalla="";
         String pantalla2="";
@@ -48,7 +47,7 @@ public class Ahorcado {
         System.out.println ("La palabra a descubrir tiene--"+ num +"--letras. Ingresa una a una. ¡Mucha suerte!");//Inicio segunda etapa (Usuario 2)//
           
         // Recorre el numero de letras de la palabra//
-       while (oportunidad2 != 0  || aciertos != num){
+        while (oportunidad2 != 0 && aciertos != num) {
             boolean encontrado= false;
             letra = reader.next().charAt(0);
             // Recorre la palabra para verificar si existe coincidencia entre la letra ingresada y las que componen la palabra a descubrir//for (int k = 0;
@@ -68,25 +67,26 @@ public class Ahorcado {
                     System.out.println ("Te quedan-" + oportunidad2 + "-intentos");
                     
                 }
-       }      
-                                         
+        }   
+        
+                                    
                 if (aciertos == num){
                     System.out.println ("<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>");  
                     System.out.println ("¡¡¡FELICITACIONES!!!¡¡¡GANASTE!!!");
                     System.out.println ("<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>");
                     System.out.println ("<<<<<<<"+ pantalla2 + ">>>>>>>>>>");
+                    
                 } 
-                  
-                               
+                                               
                 if(oportunidad2 == 0){
                    System.out.println("--------------------------------------------");
                    System.out.println("¡Fin del Juego! !Puedes volver a intentarlo!");
                    System.out.println("--------------------------------------------");
+                   
                 }
-   }                       
-                    
-            
-}
+    }                  
+}          
+
 
 
   
