@@ -12,9 +12,7 @@ public class Ahorcado {
         int oportunidad2 = 6;
         String pantalla="";
         String pantalla2="";
-        System.out.println ("--------------------------------------");
-        System.out.println ("<<<<<<<¡BIENVENIDO AL AHORCADO!>>>>>>>");
-        System.out.println ("--------------------------------------");
+	String p = "";
         //El Jugador 1 ingresa lacantidad de letras de la palabra a descubrir//
         System.out.println ("Primer jugador...Ingrese el numero de letras que contiene su palabra");
         palabra = new char[num];
